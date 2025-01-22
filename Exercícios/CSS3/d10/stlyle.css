@@ -1,0 +1,162 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playwrite+AU+SA&display=swap');
+@font-face{
+    font-family:'A';
+    src: url('idroid.otf') format('OpenType');
+    font-weight: normal;
+}
+
+:root{
+    --cor0:#c5ebd6;
+    --cor1: #83e1ad;
+    --cor: #3ddc84;
+    --cor3: #2fa866;
+    --cor4: #1a5c37;
+    --cor5: #063d1e;
+
+    --fontp: sans-serif;
+    --fontd: 'Bebas Nue';
+    --fonta:'A';
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-image: linear-gradient(180deg, var(--cor3),var(--cor5));
+    height: 150px;
+    text-align: center;
+    font-size: 1.1em;
+    font-family: var(--fontp);
+    padding-bottom:15px;
+    padding-top:15px ;
+}
+header h1 {
+    color: var(--cor3);
+    padding-top: 30px;  
+    color: white;
+    
+}
+header  p{
+  
+    color: rgb(201, 201, 201);
+    max-width: 500px;
+    margin: auto;
+}
+nav{
+    background-color: var(--cor5);
+    padding: 10px;
+    font-family: sans-serif;
+}
+nav a{
+    color: white;/**/
+    padding: 10px;
+    text-decoration: none;/*retirando a decoração da fonte no caso o sublinhado que vem por padrão em links*/
+    
+
+
+}
+nav a:hover{
+    background-color: white;
+    border-radius:5px;
+    color:#063d1e;
+    margin: 10px;
+    font-weight: bold;/*weight significa peso, e escolhemos o efeito negrito para definir o weigth da font*/
+    transition-duration: 0.6s;/*aqui temos a duração da transição do hover descrita em segundos*/
+
+
+
+}
+body{
+    background-color: rgb(241, 241, 241);
+    font-family:var(--fontp);
+}
+
+main{
+    background-color: white;
+    margin: auto;
+    max-width: 800px;
+    min-width: 300px;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.397);
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius: 10px;
+    margin-bottom: 30px;
+    padding-top: 50px;
+    font-family: var(--fontp);
+}
+main p{
+    margin: 15px 0px;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 1.4em;
+    font-family: sans-serif;
+    padding: 2px;
+    
+}
+main img{
+width: 100%;
+margin: auto;
+}
+main.imgpq{
+max-width: 350px;
+margin: auto;
+display: block;
+}
+main h1{
+    color: var(--cor5);
+    text-align: center;
+}
+main >h2{
+    font-size: 1.29em;
+    color: #063d1e;
+    background-image: linear-gradient(45deg, var(--cor1), rgba(255, 255, 255, 0));
+}
+main a{
+    color: #063d1e;
+    text-decoration: none;
+}
+main.pinicial{
+margin-bottom: 50px;
+font-size: 1,05em;
+}
+div.video{
+    background-color: #1bd66300;
+    margin: 0px -20px 30px -20px;
+    padding-bottom: 70%;
+    position: relative;
+    padding: 20%;
+}
+div.video >iframe{
+    position: absolute;
+    top: 10%;
+    left:21%;
+    width:58.5%;
+    height: 88.05%;
+}
+aside{
+    background-color: #c5edb6;
+    border-radius: 10px;
+    padding: 20px;
+
+}
+aside h2{
+    padding: 10px;
+    margin: -20px -20px 0px -20px ;
+    background-color: var(--cor5);
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+
+}
+aside >ul{
+    list-style-position: inside;
+    columns: 2;
+}
+footer{
+    background-color: var(--cor5);
+    color: white;
+    text-align: center;
+    font-size: 0.8em;
+    padding: 10px;
+}
