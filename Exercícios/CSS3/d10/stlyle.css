@@ -108,7 +108,7 @@ main h1{
     color: var(--cor5);
     text-align: center;
 }
-main >h2{
+article h2{
     font-size: 1.29em;
     color: #063d1e;
     background-image: linear-gradient(45deg, var(--cor1), rgba(255, 255, 255, 0));
@@ -134,12 +134,13 @@ div.video >iframe{
     left:21%;
     width:58.5%;
     height: 88.05%;
+    min-width: 350px;
 }
 aside{
     background-color: #c5edb6;
     border-radius: 10px;
     padding: 20px;
-
+    
 }
 aside h2{
     padding: 10px;
